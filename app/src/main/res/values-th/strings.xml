@@ -1,15 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Local Dream</string>
+
+    <!-- Models -->
+    <string name="anythingv5_description">การสร้างภาพอนิเมะ</string>
+    <string name="chilloutmix_description">ซีรีส์ ChilloutMix</string>
+    <string name="qteamix_description">อนิเมะสไตล์จิ๋ว (Chibi)</string>
+    <string name="cuteyukimix_description">อนิเมะสไตล์น่ารัก</string>
+    <string name="absolutereality_description">การสร้างภาพเสมือนจริง</string>
+    <string name="sd21_description">การสร้างภาพทั่วไป</string>
+    <string name="ponyv55_description">ซีรีส์ Pony Diffusion</string>
+
+    <!-- Models -->
+    <string name="backend_notify">บริการเบื้องหลังโมเดลกำลังทำงาน</string>
+    <string name="backend_notify_title">บริการโมเดล SD</string>
+    <string name="generating_notify">กำลังสร้างรูปภาพ…</string>
+
+    <!-- Common -->
     <string name="settings">ตั้งค่า</string>
-    <string name="delete">ลบ</string>
-    <string name="cancel">ยกเลิก</string>
     <string name="confirm">ยืนยัน</string>
-    <string name="ok">ตกลง</string>
-    <string name="error">ข้อผิดพลาด</string>
-    <string name="success">สำเร็จ</string>
-    <string name="loading">กำลังโหลด…</string>
+    <string name="cancel">ยกเลิก</string>
     <string name="save">บันทึก</string>
-    <string name="share">แชร์</string>
+    <string name="back">ย้อนกลับ</string>
+    <string name="close">ปิด</string>
+    <string name="delete">ลบ</string>
     <string name="delete_model">ลบโมเดล</string>
     <string name="delete_confirm">ลบโมเดล %s ที่เลือกหรือไม่? การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
     <string name="got_it">รับทราบ!</string>
@@ -18,6 +32,7 @@
     <string name="about_app">หมายเหตุ</string>
     <string name="must_read">แอปนี้รองรับการรัน Stable Diffusion บน CPU/GPU และ Qualcomm NPU บางรุ่น\n\nหากชิปของคุณไม่ได้อยู่ในรายการต่อไปนี้ คุณจะสามารถรันได้เฉพาะบน CPU/GPU เท่านั้น รายชื่อ NPU ที่รองรับ:\n\n- Snapdragon 8 Gen 1\n- Snapdragon 8 Gen 2\n- Snapdragon 8 Gen 3\n- Snapdragon 8 Elite\n- Snapdragon 8 Elite Gen 5\n\nสำหรับ NPU ที่มีสถาปัตยกรรม Hexagon V68 หรือใหม่กว่า จะมีการรองรับแบบทดลอง แต่ไม่รับประกันการทำงานบน NPU\n\nโปรเจกต์นี้เป็นโอเพนซอร์สที่ https://github.com/xororz/local-dream คุณสามารถดูซอร์สโค้ดหรือแจ้งปัญหาได้ที่นั่น</string>
     <string name="help">ช่วยเหลือ</string>
+
     <!-- Model List Screen -->
     <string name="available_models">โมเดลที่มีอยู่</string>
     <string name="selected_items">เลือกแล้ว %d รายการ</string>
@@ -54,9 +69,11 @@
     <string name="download_patch">ดาวน์โหลดแพตช์ความละเอียดสูง</string>
     <string name="download_patch_hint">ดาวน์โหลดแพตช์ความละเอียดสูง %1$dx%1$d สำหรับ %2$s หรือไม่? สิ่งนี้จะช่วยให้สร้างภาพขนาด %1$dpx ได้</string>
     <string name="highres_patch">แพตช์ความละเอียดสูง</string>
+
     <!-- Crop Screen -->
     <string name="crop_image">ครอบตัดรูปภาพ</string>
     <string name="crop_hint">ลากเพื่อปรับพื้นที่ครอบตัด</string>
+
     <!-- Inpaint Screen -->
     <string name="set_inpaint_area">กำหนดพื้นที่ระบายสี</string>
     <string name="inpaint_hint">ระบายสีทับบริเวณที่คุณต้องการแก้ไข</string>
@@ -65,6 +82,7 @@
     <string name="redo">ทำซ้ำ</string>
     <string name="clear">ล้าง</string>
     <string name="brush_color">สีแปรง</string>
+
     <!-- Run Screen -->
     <string name="prompt_settings">คำสั่ง (Prompts)</string>
     <string name="advanced_settings">ขั้นสูง</string>
@@ -80,13 +98,84 @@
     <string name="prompt_tab">คำสั่ง</string>
     <string name="result_tab">ผลลัพธ์</string>
     <string name="history_tab">ประวัติ</string>
+    <string name="no_history">ไม่มีประวัติการสร้าง</string>
+    <string name="no_history_hint">ประวัติจะถูกบันทึกหลังจากการสร้างภาพ</string>
+    <string name="recent_100_items">แสดงเฉพาะ 100 รายการล่าสุด</string>
+    <string name="selected_items_count">เลือกแล้ว %d รายการ</string>
+    <string name="generation_params_title">พารามิเตอร์การสร้าง</string>
+    <string name="use_same_seed_title">ใช้ Seed เดิมหรือไม่?</string>
+    <string name="use_same_seed_message">ใช้ค่า Seed เดิม (%s) เพื่อสร้างภาพซ้ำหรือไม่?\n\nเลือก \"ใช่\" เพื่อใช้ Seed เดิม, เลือก \"ไม่\" เพื่อใช้เฉพาะพารามิเตอร์เดิม</string>
+    <string name="delete_image">ลบรูปภาพ</string>
+    <string name="delete_image_confirm">คุณแน่ใจหรือไม่ว่าต้องการลบรูปภาพนี้? การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
+    <string name="deleted">ลบแล้ว</string>
+    <string name="delete_failed_message">ลบล้มเหลว</string>
+    <string name="batch_delete">ลบแบบกลุ่ม</string>
+    <string name="batch_delete_confirm">คุณแน่ใจหรือไม่ว่าต้องการลบรูปภาพที่เลือก %d ภาพ? การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
+    <string name="deleted_count">ลบแล้ว %d รายการ</string>
+    <string name="deleted_count_with_failed">ลบสำเร็จ %1$d รายการ, ล้มเหลว %2$d รายการ</string>
+    <string name="confirm_exit">ยืนยันการออก</string>
+    <string name="confirm_exit_hint">กำลังสร้างภาพ คุณแน่ใจหรือไม่ว่าต้องการออก?</string>
+    <string name="reset">รีเซ็ต</string>
+    <string name="reset_hint">รีเซ็ตพารามิเตอร์ทั้งหมดหรือไม่? การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
+    <string name="media_permission_hint">จำเป็นต้องได้รับอนุญาตเข้าถึงสื่อสำหรับการสร้างภาพแบบ img2img</string>
+    <string name="backend_failed">เริ่มต้น Backend ล้มเหลว อุปกรณ์ของคุณอาจไม่รองรับ</string>
+
+    <!-- Parameter Settings -->
+    <string name="generation_params">พารามิเตอร์การสร้าง</string>
     <string name="steps">ขั้นตอน (Steps)</string>
-    <string name="guidance_scale">Guidance Scale</string>
-    <string name="seed">Seed</string>
+    <string name="cfg_scale">CFG Scale: %.1f</string>
+    <string name="image_size">ขนาดภาพ: %1$dx%2$d</string>
     <string name="random_seed">สุ่ม Seed</string>
-    <string name="strength">ความเข้ม (Strength)</string>
-    <string name="model_name">ชื่อโมเดล</string>
-    <string name="enter_model_name">ใส่ชื่อโมเดล</string>
+    <string name="use_last_seed">ใช้ Seed ล่าสุด (%s)</string>
+    <string name="batch_count">จำนวนชุด: %d</string>
+    <string name="reproduce">สร้างซ้ำ</string>
+    <string name="result_params">ขั้นตอน: %s / CFG: %.1f / seed: %s</string>
+    <string name="result_params_2">ขนาด: %sx%s / เวลา: %s / %s</string>
+    <string name="params_detail">รายละเอียด</string>
+    <string name="basic_params">พื้นฐาน</string>
+    <string name="basic_step">ขั้นตอน: %d</string>
+    <string name="basic_size">ขนาด: %dx%d</string>
+    <string name="basic_seed">Seed: %s</string>
+    <string name="basic_runtime">Runtime: %s</string>
+    <string name="basic_time">เวลา: %s</string>
+    <string name="opencl_warning">คำเตือน GPU runtime: การทำงานครั้งแรกในแต่ละความละเอียดจะช้าเนื่องจากระบบกำลังสร้างไฟล์แคช การทำงานครั้งต่อไปจะเร็วขึ้นมาก</string>
+
+    <!-- Error Messages -->
+    <string name="error_device_not_supported">อุปกรณ์ของคุณยังไม่รองรับ กรุณาใช้เวอร์ชัน CPU</string>
+    <string name="error_download_failed">ดาวน์โหลดล้มเหลว: %s</string>
+    <string name="error_request_failed">คำขอล้มเหลว: %s</string>
+    <string name="error_generation_failed">การสร้างภาพล้มเหลว: %s</string>
+    <string name="unknown_error">ข้อผิดพลาดที่ไม่รู้จัก</string>
+
+    <!-- Info Messages -->
+    <string name="image_saved">บันทึกรูปภาพลงแกลเลอรีแล้ว</string>
+    <string name="loading_model">กำลังโหลดโมเดล…</string>
+
+    <!-- File Manager -->
+    <string name="file_manager">ตัวจัดการไฟล์</string>
+    <string name="file_manager_desc">จัดการไฟล์โมเดล</string>
+    <string name="delete_file">ลบไฟล์</string>
+    <string name="delete_file_confirm">คุณแน่ใจหรือไม่ว่าต้องการลบไฟล์ \"%s\"?</string>
+    <string name="file_deleted">ลบไฟล์สำเร็จแล้ว</string>
+    <string name="no_model_files">ไม่พบไฟล์โมเดล</string>
+    <string name="loading_files">กำลังโหลดไฟล์…</string>
+    <string name="back_to_folders">กลับไปที่โฟลเดอร์</string>
+    <string name="model_folder">โมเดล: %s</string>
+    <string name="file_count">%d ไฟล์</string>
+
+    <!-- Settings -->
+    <string name="general_settings">การตั้งค่าทั่วไป</string>
+    <string name="download_source">แหล่งดาวน์โหลด</string>
+    <string name="feature_settings">การตั้งค่าฟีเจอร์</string>
+    <string name="file_management">การจัดการไฟล์</string>
+
+    <!-- Custom Model -->
+    <string name="add_custom_model">เพิ่มโมเดลกำหนดเอง</string>
+    <string name="add_custom_npu_model">เพิ่มโมเดล NPU กำหนดเอง</string>
+    <string name="custom_model">โมเดลกำหนดเอง</string>
+    <string name="custom_npu_model">โมเดล NPU กำหนดเอง</string>
+    <string name="custom_model_name">ชื่อโมเดล</string>
+    <string name="custom_model_name_hint">ใส่ชื่อโมเดล</string>
     <string name="select_model_file">เลือกไฟล์โมเดล</string>
     <string name="select_zip_file">เลือกไฟล์ ZIP</string>
     <string name="zip_file_selected">เลือกไฟล์ ZIP แล้ว</string>
@@ -112,6 +201,7 @@
     <string name="selected_lora_files">ไฟล์ LoRA ที่เลือก:</string>
     <string name="copying_lora_files">กำลังคัดลอกไฟล์ LoRA…</string>
     <string name="lora_weight">น้ำหนัก (Weight):</string>
+
     <!-- Embedding Manager -->
     <string name="embedding_management">การจัดการ Embedding</string>
     <string name="embedding_manager">ตัวจัดการ Embedding</string>
@@ -125,6 +215,7 @@
     <string name="select_embedding_file">เลือกไฟล์ Embedding</string>
     <string name="embedding_file_hint">เลือกไฟล์ embedding แบบ safetensors</string>
     <string name="only_safetensors_supported">รองรับเฉพาะไฟล์ .safetensors เท่านั้น</string>
+
     <!-- Upscaler -->
     <string name="select_upscaler_model">เลือกโมเดลขยายภาพ</string>
     <string name="upscaling_image">กำลังขยายภาพ…</string>

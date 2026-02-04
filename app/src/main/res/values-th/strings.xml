@@ -129,8 +129,8 @@
     <string name="use_last_seed">ใช้ Seed ล่าสุด (%s)</string>
     <string name="batch_count">จำนวนชุด: %d</string>
     <string name="reproduce">สร้างซ้ำ</string>
-    <string name="result_params">ขั้นตอน: %s / CFG: %.1f / seed: %s\"</string>
-    <string name="result_params_2">ขนาด: %sx%s / เวลา: %s / %s\"</string>
+    <string name="result_params">ขั้นตอน: %s / CFG: %.1f / seed: %s</string>
+    <string name="result_params_2">ขนาด: %sx%s / เวลา: %s / %s</string>
     <string name="params_detail">รายละเอียด</string>
     <string name="basic_params">พื้นฐาน</string>
     <string name="basic_step">ขั้นตอน: %d</string>

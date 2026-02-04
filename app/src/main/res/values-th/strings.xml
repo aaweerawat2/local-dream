@@ -104,7 +104,7 @@
     <string name="selected_items_count">เลือกแล้ว %d รายการ</string>
     <string name="generation_params_title">พารามิเตอร์การสร้าง</string>
     <string name="use_same_seed_title">ใช้ Seed เดิมหรือไม่?</string>
-    <string name="use_same_seed_message">ใช้ค่า Seed เดิม (%s) เพื่อสร้างภาพซ้ำหรือไม่?\n\nเลือก "ใช่" เพื่อใช้ Seed เดิม, เลือก "ไม่" เพื่อใช้เฉพาะพารามิเตอร์เดิม</string>
+    <string name="use_same_seed_message">ใช้ค่า Seed เดิม (%s) เพื่อสร้างภาพซ้ำหรือไม่?\n\nเลือก \"ใช่\" เพื่อใช้ Seed เดิม, เลือก \"ไม่\" เพื่อใช้เฉพาะพารามิเตอร์เดิม</string>
     <string name="delete_image">ลบรูปภาพ</string>
     <string name="delete_image_confirm">คุณแน่ใจหรือไม่ว่าต้องการลบรูปภาพนี้? การดำเนินการนี้ไม่สามารถย้อนกลับได้</string>
     <string name="deleted">ลบแล้ว</string>
@@ -129,8 +129,8 @@
     <string name="use_last_seed">ใช้ Seed ล่าสุด (%s)</string>
     <string name="batch_count">จำนวนชุด: %d</string>
     <string name="reproduce">สร้างซ้ำ</string>
-    <string name="result_params">ขั้นตอน: %s / CFG: %.1f / seed: %s"</string>
-    <string name="result_params_2">ขนาด: %sx%s / เวลา: %s / %s"</string>
+    <string name="result_params">ขั้นตอน: %s / CFG: %.1f / seed: %s\"</string>
+    <string name="result_params_2">ขนาด: %sx%s / เวลา: %s / %s\"</string>
     <string name="params_detail">รายละเอียด</string>
     <string name="basic_params">พื้นฐาน</string>
     <string name="basic_step">ขั้นตอน: %d</string>
@@ -155,7 +155,7 @@
     <string name="file_manager">ตัวจัดการไฟล์</string>
     <string name="file_manager_desc">จัดการไฟล์โมเดล</string>
     <string name="delete_file">ลบไฟล์</string>
-    <string name="delete_file_confirm">คุณแน่ใจหรือไม่ว่าต้องการลบไฟล์ "%s"?</string>
+    <string name="delete_file_confirm">คุณแน่ใจหรือไม่ว่าต้องการลบไฟล์ \"%s\"?</string>
     <string name="file_deleted">ลบไฟล์สำเร็จแล้ว</string>
     <string name="no_model_files">ไม่พบไฟล์โมเดล</string>
     <string name="loading_files">กำลังโหลดไฟล์…</string>
